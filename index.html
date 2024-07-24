@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h2>To-Do-List</h2>
+        <img  width="50px" height="40px" src="icon.png" alt="">
+    </div>
+    <input id="textar" type="text" placeholder="Add your text">
+    <button class="hi">ADD</button>
+    
+   
+    </div>
+    <script>
+        let c=document.querySelector("#textar");
+        let bt=document.querySelector(".hi");
+        bt.addEventListener("click",()=>{
+            if(c.value==''){
+                alert("type something");
+            }
+            else{
+                let ele=document.createElement("div");
+                
+                
+                document.querySelector(".container").insertAdjacentHTML("beforeend",`<div class="task"><div class="u">
+        <img class="change" height="25px" src="unchecked.png" alt="">
+        <div class="change si">${c.value}</div></div><img height="22px" src="remove.png" class="del">
+    </div>`);
+    let d=document.querySelectorAll(".u");
+        for(let l of d){
+        l.addEventListener("click",()=>{
+            l.querySelector(".change").src="checked.png";
+            l.style.textDecoration="line-through";
+            
+        })
+            }
+        }
+        let lel=document.querySelectorAll(".task")
+        for(let p of lel){
+            p.querySelector(".del").addEventListener("click",()=>{
+                p.remove();
+            })
+        }
+       
+        })
+        for(let l of d){
+        l.addEventListener("click",()=>{
+            l.querySelector(".change").src="unchecked.png";
+            l.style.textDecoration="none";
+            
+        })
+            }
+        
+    </script>
+    
+    
+</body>
+</html>

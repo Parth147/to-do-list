@@ -1,0 +1,62 @@
+*{
+    background: linear-gradient(135deg,#153677,#4e085f);
+}
+.box,.task{
+    display: flex;
+    background: #fff;
+   
+}
+.container{
+    padding:20px;
+    margin: 100px 20px 20px 30vw;
+    max-width: 400px;
+    border: 2px solid black;
+    background:#fff;
+    border-radius: 40px;
+}
+h2{
+    position: relative;
+    bottom: 15px;
+    color:violet;
+    margin-right: 7px;
+    background:#fff;
+}
+img{
+    background:#fff;
+}
+#textar,button{
+    height:30px;
+    width:300px;
+    background:rgb(253, 246, 246);
+    border: 2px solid rgb(88, 83, 83) ;
+    border-radius: 40px;
+    margin-bottom:20px ;
+
+}
+.hi{
+    height:35px;
+    width:70px;
+    border-radius: 20px;
+    position: relative;
+    right: 40px;
+    background: rgb(254, 77, 37);
+}
+.task div{
+    background:#fff;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.task{
+    margin: 10px;
+    justify-content: space-between;
+  
+}
+button{
+    width:28px;
+}
+.u{
+    display: flex;
+ 
+}
+
